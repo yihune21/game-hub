@@ -10,23 +10,16 @@ function App() {
             "nav"
             "main"
           `,
-          md: `
-            "nav main"
-            "nav aside"
-          `,
+          lg: ` "nav nav" "aside main"`,
         }}
       >
         <GridItem gridArea="nav">
           <NavBar></NavBar>
         </GridItem>
         <Show above="lg">
-          <GridItem gridArea="aside" bg="gold">
-            Aside
-          </GridItem>
+          <GridItem gridArea="aside">Aside</GridItem>
         </Show>
-        <GridItem gridArea="main" bg="dodgerblue">
-          Main
-        </GridItem>
+        <GridItem gridArea="main">Main</GridItem>
       </Grid>
     </>
   );
