@@ -1,5 +1,7 @@
+import dowload from "../assets/download.jpeg";
+
 const getCroppedImageUrl = (url: string) => {
-  if (!url) return "";
+  if (!url) return dowload;
   const target = "media/";
   const index = url.indexOf(target) + target.length;
 
